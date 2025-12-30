@@ -5,7 +5,7 @@ import requests
 
 
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
+st.write("Status:", smoothiefroot_response.status_code)
 
 cnx = st.connection("snowflake")
 session = cnx.session()
